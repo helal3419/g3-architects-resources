@@ -15,7 +15,7 @@
 /*ful-header-continer box start*/
 
 .ful-header-continer{
-    height:850px;
+    height:1050px;
     width: 100%;
     background: rgba(255, 144, 14, 0.1);
     
@@ -70,8 +70,8 @@
 }
     /*header banner*/
 .banner-box{
-    height: 400px;
-    max-width: 1000px;
+    height: 600px;
+    max-width: 1400px;
    
     margin: 0 auto;
     
@@ -81,12 +81,62 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 400px;
+    height: 600px;
     
 }
 
 
 /*ful-header-continer box end*/
+/*Quick list of Our Features start*/
+.teams{
+    display: flex;
+    margin: 10px 150px;
+}
+.our-features{
+    
+    align-items: center;
+    margin: 10px 100px;
+    padding-top: 220px;
+}
+.our-features h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.our-features button{
+    background-color: rgb(255, 144, 14);
+    color: white;
+    border-radius: 8px;
+    height: 35px;
+    width: 100px;
+    border: none;
+    margin-top: 20px;
+}
+
+.our-features p{
+    font-size: 16px;
+    color: rgb(114, 114, 114);
+}
+.first-text{
+    color: rgb(114, 114, 114);
+}
+.second-text{
+    color: rgb(19, 19, 19);
+}
+.third-text{
+    color: rgb(255, 144, 14);
+}
+
+
+
+.team-image-continer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    
+}
+/*Quick list of Our Features  END*/
+
+
 
 
   /*media quarry small devise start*/  
@@ -116,8 +166,26 @@
     width: 100%;
 }
 
+ /*team image contener start*/
+ .team-image-continer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    
+}
+.teams{
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.our-features{
+
+    margin: 10px 10px;
+    padding-top: 20px;
+
  }
+}
   /*media quarry small devise end*/ 
+
    /*media quarry medium devise start*/ 
    @media screen and (min-width: 576px) and (max-width: 992px){
     .header-text{
@@ -127,14 +195,43 @@
         height:810px;
         width: 100%;
     }
-
-  /*media quarry medium devise end*/ 
-
-
-
-
-
-
-
-
+    .teams{
+        flex-direction: column;
+        margin: 10px 10px;
+        padding-top: 200px;
+    }
+    .our-features{
+    
+        margin: 10px 50px;
+        padding-top: 30px;
+    
+     }
    }
+  /*media quarry medium devise end*/ 
+  
+ /*media quarry long device start*/
+ @media screen and (min-width: 992px) and (max-width:1024px){
+
+    .teams{
+        flex-direction: column;
+        margin: 10px 150px;
+        padding-top: 10px;
+    }
+
+    .our-features{
+    
+        margin: 10px 50px;
+        padding-top: 30px;
+    
+     }
+     .header-text{
+        margin: 50px 100px;
+    }
+
+ }
+/*media quarry long device end*/
+  
+
+
+
+   
