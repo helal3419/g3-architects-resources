@@ -18,13 +18,15 @@
     height:850px;
     width: 100%;
     background: rgba(255, 144, 14, 0.1);
+    
 
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 60px 125px;
+    margin:0 130px ;
+    padding-top: 30px;
     align-items: center;
 }
 .nav-links{
@@ -42,7 +44,7 @@
 
 /*header text decoretion*/
 .header-text{
-    padding: 20px 300px;
+    margin: 70px 300px;
     text-align: center;   
 
 }
@@ -87,5 +89,52 @@
 /*ful-header-continer box end*/
 
 
-    
+  /*media quarry small devise start*/  
+ @media screen  and (max-width: 573px ) {
+    .navbar{
+    margin: 0 10px;
+    font-size: small;
+    }
+    .project-name{
+        font-size: small;
+    }
+    .nav-links{
+        gap: 6px;
+    }
 
+
+    .header-text{
+        margin: 10px 20px;
+    }
+    .banner{   
+        background-size: cover;
+        height: 300px;  
+}
+
+.ful-header-continer{
+    height:670px;
+    width: 100%;
+}
+
+ }
+  /*media quarry small devise end*/ 
+   /*media quarry medium devise start*/ 
+   @media screen and (min-width: 576px) and (max-width: 992px){
+    .header-text{
+        margin: 50px 20px;
+    }
+    .ful-header-continer{
+        height:810px;
+        width: 100%;
+    }
+
+  /*media quarry medium devise end*/ 
+
+
+
+
+
+
+
+
+   }
